@@ -1,0 +1,30 @@
+.desktop_navLinks_container {
+	flex: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.desktop_navLinks {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.desktop_navLinks a {
+	color: black;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+	.desktop_navLinks_container {
+		display: none;
+	}
+}

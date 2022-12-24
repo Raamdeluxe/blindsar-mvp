@@ -1,11 +1,11 @@
 import classes from "./App.module.css";
-import NavBar from "./Components/NavBar/NavBar";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
 	return (
 		<div className={classes.App}>
 			<>
-				<NavBar />
+				<Navbar />
 			</>
 		</div>
 	);

@@ -1,34 +1,44 @@
-import classes from "./NavBar.module.css";
-import { useState } from "react";
+import React, { useState } from "react";
+import classes from "./Navbar.module.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
+import company_logo from "../Assets/companylogo_raamdeluxe.png";
+import MobileNavbar from "./MobileNavbar";
+import DesktopNavbar from "./DesktopNavbar";
 
-const NavBar = () => {
+const Navbar = () => {
+	const [open, setOpen] = useState(true);
+
 	return (
-		<nav className={classes.navBar_section}>
-			<div className={classes.logo_container}>
-				<div className={classes.company_logo}></div>
-			</div>
-			<div className={classes.navLinks_container}>
-				<ul className={classes.navLinks}>
-					<li>
-						<a href="/">About</a>
-					</li>
-					<li>
-						<a href="/">Product</a>
-					</li>
-					<li>
-						<a href="/">Contact</a>
-					</li>
-				</ul>
-			</div>
-			<div className={classes.cart_container}>
-				<button className={classes.cart_button}>
-					<AiOutlineShoppingCart className={classes.cart} />
-				</button>
-			</div>
-		</nav>
+		<>
+			<nav className={classes.navbar_section}>
+				<div className={classes.nav_btn}>
+					<button onClick={() => setOpen(!open)}>
+						{open ? (
+							<GiHamburgerMenu className={classes.hamburger} />
+						) : (
+							<RxCross2 className={classes.hamburger} />
+						)}
+					</button>
+				</div>
+				<div className={classes.logo_container}>
+					<img
+						className={classes.company_logo}
+						src={company_logo}
+						alt="Raamdeluxe bedrijfslogo"
+					/>
+				</div>
+				<DesktopNavbar />
+				<div className={classes.cart_container}>
+					<button className={classes.cart_button}>
+						<AiOutlineShoppingCart className={classes.cart} />
+					</button>
+				</div>
+			</nav>
+			<MobileNavbar open={!open} />
+		</>
 	);
 };
 
-export default NavBar;
+export default Navbar;
