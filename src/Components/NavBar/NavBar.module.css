@@ -1,0 +1,77 @@
+.navBar_section {
+	height: 80px;
+	background-color: aqua;
+	padding: 20px;
+	display: flex;
+}
+
+.logo_container {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.company_logo {
+	width: 100%;
+	height: 70%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("../Assets/companylogo_raamdeluxe.png");
+}
+
+.navLinks_container {
+	flex: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.navLinks {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.navLinks a {
+	color: black;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.cart_container {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.cart_button {
+	min-width: 50px;
+	min-height: 50px;
+	background-color: white;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+}
+
+.cart {
+	min-width: 30px;
+	min-height: 30px;
+}
+
+@media only screen and (max-width: 660px) {
+	.navLinks_container {
+		display: none;
+	}
+}
