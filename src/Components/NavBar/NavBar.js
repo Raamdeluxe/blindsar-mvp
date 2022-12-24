@@ -13,7 +13,7 @@ const Navbar = () => {
 	return (
 		<>
 			<nav className={classes.navbar_section}>
-				<div className={classes.nav_btn}>
+				<div className={classes.navBtn}>
 					<button onClick={() => setOpen(!open)}>
 						{open ? (
 							<GiHamburgerMenu className={classes.hamburger} />

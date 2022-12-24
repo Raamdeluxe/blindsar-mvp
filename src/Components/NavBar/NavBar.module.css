@@ -43,7 +43,7 @@
 	min-height: 30px;
 }
 
-.nav_btn {
+.navBtn {
 	display: none;
 }
 
@@ -52,7 +52,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-	.nav_btn {
+	.navBtn {
 		flex: 1;
 		display: flex;
 		align-items: center;
@@ -60,7 +60,7 @@
 		height: 100%;
 	}
 
-	.nav_btn button {
+	.navBtn button {
 		border: none;
 		width: 30px;
 		height: 30px;
