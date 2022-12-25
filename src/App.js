@@ -1,11 +1,13 @@
 import classes from "./App.module.css";
-import NavBar from "./Components/NavBar/NavBar";
+import Navbar from "./Components/Navbar/Navbar";
+import TopSection from "./Components/TopSection/TopSection";
 
 function App() {
 	return (
 		<div className={classes.App}>
 			<>
-				<NavBar />
+				<Navbar />
+				<TopSection />
 			</>
 		</div>
 	);

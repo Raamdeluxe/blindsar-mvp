@@ -1,0 +1,36 @@
+.mobile_navLinks_container {
+	display: none;
+}
+
+@media only screen and (max-width: 900px) {
+	.mobile_navLinks_container {
+		display: flex;
+		justify-content: center;
+		position: sticky;
+		background-color: white;
+		top: 0;
+		transition: 0.5s;
+		padding: 0px 20px 20px 20px;
+	}
+
+	.mobile_navLinks {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		overflow-y: hidden;
+	}
+
+	.mobile_navLinks a {
+		color: black;
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		text-decoration: none;
+	}
+}
