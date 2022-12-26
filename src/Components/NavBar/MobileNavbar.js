@@ -1,19 +1,8 @@
 import classes from "./MobileNavbar.module.css";
 
-const MobileNavbar = ({ open }) => {
-	const openNavbar = {
-		height: "150px",
-	};
-
-	const closeNavbar = {
-		height: "0px",
-	};
-
+const MobileNavbar = () => {
 	return (
-		<div
-			className={classes.mobile_navLinks_container}
-			style={open ? openNavbar : closeNavbar}
-		>
+		<div className={classes.mobile_navLinks_container}>
 			<ul className={classes.mobile_navLinks}>
 				<li>
 					<a href="/">About</a>
