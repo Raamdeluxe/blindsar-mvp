@@ -8,7 +8,7 @@ import MobileNavbar from "./MobileNavbar";
 import DesktopNavbar from "./DesktopNavbar";
 
 const Navbar = () => {
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
 
 	return (
 		<>
@@ -16,9 +16,9 @@ const Navbar = () => {
 				<div className={classes.navBtn}>
 					<button onClick={() => setOpen(!open)}>
 						{open ? (
-							<GiHamburgerMenu className={classes.hamburger} />
-						) : (
 							<RxCross2 className={classes.hamburger} />
+						) : (
+							<GiHamburgerMenu className={classes.hamburger} />
 						)}
 					</button>
 				</div>
@@ -36,7 +36,7 @@ const Navbar = () => {
 					</button>
 				</div>
 			</nav>
-			<MobileNavbar open={!open} />
+			{open && <MobileNavbar />}
 		</>
 	);
 };
