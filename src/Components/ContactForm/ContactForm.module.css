@@ -1,0 +1,144 @@
+.contact_section {
+	max-width: 1440px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 50px 20px 20px 20px;
+}
+
+.contact_title {
+	width: 100%;
+	text-align: center;
+}
+
+.contact_title h2 {
+	text-align: center;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 35px;
+	color: #101010;
+}
+
+.contact_container {
+	display: flex;
+}
+
+.contactform_container {
+	width: 50%;
+}
+
+.contactform {
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	height: 100%;
+	padding: 20px;
+	margin: auto;
+}
+
+.input_field {
+	width: 100%;
+	padding-bottom: 20px;
+	flex-direction: column;
+	display: flex;
+}
+
+label {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	color: #333333;
+}
+
+.form_control {
+	border-radius: 10px;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.2);
+	min-height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	color: #101010;
+}
+
+textarea.form_control {
+	border-radius: 10px;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.2);
+	min-height: 150px;
+	padding: 10px 10px 10px 10px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	color: #101010;
+	resize: none;
+}
+
+.input_field_submit {
+	min-height: 50px;
+	width: 100%;
+	background-color: #b2a565;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.location_container {
+	width: 50%;
+}
+
+.location_adress_container {
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	height: 100%;
+	padding: 20px;
+	margin: auto;
+}
+
+.location_container h3 {
+	margin: 0;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15;
+	color: #333333;
+}
+
+@media screen and (max-width: 600px) {
+	.contact_container {
+		flex-direction: column-reverse;
+		gap: 30px;
+		flex-wrap: wrap;
+	}
+
+	.contactform_container {
+		width: 100%;
+	}
+
+	.location_container {
+		width: 100%;
+	}
+
+	.location_adress_container {
+		width: 100%;
+		padding: 0px;
+		margin: 0;
+	}
+
+	.contactform {
+		width: 100%;
+		padding: 0px;
+		margin: 0;
+	}
+}
