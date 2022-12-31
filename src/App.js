@@ -1,4 +1,5 @@
 import classes from "./App.module.css";
+import ContactForm from "./Components/ContactForm/ContactForm";
 import Navbar from "./Components/Navbar/Navbar";
 import TopSection from "./Components/TopSection/TopSection";
 import UspSection from "./Components/UspSection/UspSection";
@@ -10,6 +11,7 @@ function App() {
 				<Navbar />
 				<TopSection />
 				<UspSection />
+				<ContactForm />
 			</>
 		</div>
 	);
