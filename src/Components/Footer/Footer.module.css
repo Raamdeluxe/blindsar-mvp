@@ -1,0 +1,134 @@
+.footer_section {
+	background-color: #f6f6f6;
+	padding: 0px 20px 20px 20px;
+}
+
+.footer_container {
+	display: flex;
+	padding: 50px 20px 20px 20px;
+	margin: auto;
+	max-width: 1440px;
+	justify-content: space-between;
+}
+
+.company_logo_container {
+	width: 20%;
+	height: 100%;
+	background-color: #ffffff;
+	border-radius: 10px;
+	justify-content: center;
+	display: flex;
+}
+
+.company_logo_footer {
+	height: 100px;
+	width: 80%;
+	background-image: url("../Assets/companylogo_raamdeluxe.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.footer_content_container {
+	display: flex;
+	column-gap: 50px;
+}
+
+.footer_content_container h3 {
+	margin: 0;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	color: #2f353e;
+}
+
+.footer_content_container {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	color: #6c757d;
+}
+
+.social_logos {
+	display: flex;
+	margin: 16px 0;
+	height: 15%;
+}
+
+.facebook_icon {
+	flex: 1;
+	height: 100%;
+}
+
+.instagram_icon {
+	flex: 1;
+	height: 100%;
+}
+
+.pinterest_icon {
+	flex: 1;
+	height: 100%;
+}
+
+.copyright_and_terms {
+	display: flex;
+	max-width: 1440px;
+	margin: auto;
+	justify-content: space-between;
+	font-family: "Futura PT";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #6c757d;
+}
+
+@media screen and (max-width: 600px) {
+	.footer_section {
+		padding: 50px 20px 20px 20px;
+	}
+
+	.footer_container {
+		column-gap: 0;
+	}
+
+	.company_logo_container {
+		grid-row: 2 / 2;
+		grid-column: 1 / 1;
+		min-height: 130px;
+	}
+
+	.footer_content_container {
+		grid-row: 1 / 1;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column: 1 / 1;
+		text-align: center;
+	}
+
+	.social_logos {
+		max-width: 100%;
+	}
+
+	.facebook_icon {
+		display: grid;
+		justify-self: center;
+	}
+
+	.instagram_icon {
+		display: grid;
+		justify-self: center;
+	}
+
+	.pinterest_icon {
+		display: grid;
+		justify-self: center;
+	}
+
+	.copyright_and_terms {
+		grid-row: 3 / 3;
+		grid-column: 1 / 1;
+		font-size: 12px;
+		text-align: center;
+	}
+}
