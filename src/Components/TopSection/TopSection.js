@@ -1,5 +1,4 @@
 import classes from "./TopSection.module.css";
-import instructionVideo from "../Assets/instruction_video.png";
 
 const TopSection = () => {
 	return (
