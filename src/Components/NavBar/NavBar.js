@@ -36,7 +36,7 @@ const Navbar = () => {
 					</button>
 				</div>
 			</nav>
-			{open && <MobileNavbar />}
+			<MobileNavbar open={open} />
 		</>
 	);
 };

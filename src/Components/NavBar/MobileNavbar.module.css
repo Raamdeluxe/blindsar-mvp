@@ -8,7 +8,7 @@
 		justify-content: center;
 		background-color: white;
 		padding: 0px 20px 20px 20px;
-		height: 150px;
+		transition: 0.5s;
 	}
 
 	.mobile_navLinks {

@@ -16,6 +16,7 @@ const ProductSection = () => {
 					more recently with desktop publishing software like Aldus PageMaker
 					including versions of Lorem Ipsum.
 				</p>
+				<button className={classes.measureBtn}>Measure now</button>
 			</div>
 			<div className={classes.image_container}>
 				<div className={classes.image}></div>

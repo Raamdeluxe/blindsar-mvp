@@ -28,6 +28,21 @@
 	font-weight: 400;
 	font-size: 15px;
 	color: #969696;
+	margin-bottom: 30px;
+}
+
+.measureBtn {
+	height: 15%;
+	width: 50%;
+	border: 2px solid #b2a565;
+	border-radius: 10px;
+	background-color: #b2a565;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 27px;
+	color: #ffffff;
 }
 
 .image_container {
@@ -52,6 +67,20 @@
 	}
 
 	.text_container {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
+	}
+
+	.measureBtn {
+		min-height: 60px;
+		width: 50%;
+		border: 2px solid #b2a565;
+		border-radius: 10px;
+		background-color: #b2a565;
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 27px;
+		color: #ffffff;
 	}
 }
