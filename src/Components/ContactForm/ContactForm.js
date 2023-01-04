@@ -1,6 +1,19 @@
 import classes from "./ContactForm.module.css";
+import { useState } from "react";
 
 const ContactForm = () => {
+	const [formData, setFormData] = useState({});
+
+	function handleChange(event) {
+		const { name, value } = event.target;
+		setFormData((prevData) => ({ ...prevData, [name]: value }));
+	}
+
+	function handleSubmit(event) {
+		event.preventDefault();
+		localStorage.setItem("formData", JSON.stringify(formData));
+	}
+
 	return (
 		<div className={classes.contact_section}>
 			<div className={classes.contact_title}>
@@ -8,18 +21,32 @@ const ContactForm = () => {
 			</div>
 			<div className={classes.contact_container}>
 				<div className={classes.contactform_container}>
-					<form className={classes.contactform}>
+					<form onSubmit={handleSubmit} className={classes.contactform}>
 						<div className={classes.input_field}>
 							<label htmlFor="text">First Name</label>
-							<input type="text" className={classes.form_control}></input>
+							<input
+								type="text"
+								name="name"
+								onChange={handleChange}
+								className={classes.form_control}
+							></input>
 						</div>
 						<div className={classes.input_field}>
 							<label htmlFor="text">Email</label>
-							<input type="email" className={classes.form_control}></input>
+							<input
+								type="email"
+								name="email"
+								onChange={handleChange}
+								className={classes.form_control}
+							></input>
 						</div>
 						<div className={classes.input_field}>
 							<label htmlFor="message">Description</label>
-							<textarea className={classes.form_control}></textarea>
+							<textarea
+								name="message"
+								onChange={handleChange}
+								className={classes.form_control}
+							></textarea>
 						</div>
 						<button type="submit" className={classes.input_field_submit}>
 							<p>Submit</p>
