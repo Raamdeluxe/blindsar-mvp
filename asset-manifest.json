@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/blindsar-mvp/static/css/main.46240a95.css",
+    "main.js": "/blindsar-mvp/static/js/main.40a6fb0b.js",
+    "static/media/hero_image.png": "/blindsar-mvp/static/media/hero_image.4bc22f0446b6d9a95eef.png",
+    "static/media/usp_image.png": "/blindsar-mvp/static/media/usp_image.c4f9e73e012ef8dd4cee.png",
+    "static/media/product.png": "/blindsar-mvp/static/media/product.6d7452b785a850d095ba.png",
+    "static/media/instruction_video.png": "/blindsar-mvp/static/media/instruction_video.285536b10dc7789e86e2.png",
+    "static/media/companylogo_raamdeluxe.png": "/blindsar-mvp/static/media/companylogo_raamdeluxe.49d6f6a5454bba5ac86c.png",
+    "index.html": "/blindsar-mvp/index.html",
+    "main.46240a95.css.map": "/blindsar-mvp/static/css/main.46240a95.css.map",
+    "main.40a6fb0b.js.map": "/blindsar-mvp/static/js/main.40a6fb0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46240a95.css",
+    "static/js/main.40a6fb0b.js"
+  ]
+}
